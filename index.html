@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1 - Stephen Hawking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="title" onclick="TrocaTxt()">
+     Stephen Hawking
+    </div>
+
+    <header>
+        <nav>
+
+            <a href="#definicao" class="menu">Sobre</a>
+            <a href="#album" class="menu">Imagens</a>
+            <a href="#ldt" class="menu">Linha do Tempo</a>
+
+        </nav>
+    </header>
+
+    <main id="main"> <!-- um elemento com id="main"-->
+
+        <br>
+
+        <div id="img-div"> <!-- um elemento div com id="img-div"--> 
+            <figure>
+                <img onclick="changeImg()" src="https://images.unsplash.com/photo-1576764721257-242b757e67d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Stephen com um quadro" width="auto" id="img-muda"> 
+                <figcaption id="legenda-imagem"> Stephen Hawking (1942-2018)</figcaption>
+            </figure>
+        </div>
+    
+        <br><br>
+
+        <section id="definicao"> <!-- um texto descrevendo o personagem escolhido; -->
+            <nav>
+                <div>
+                    <br>
+                    <h2 class="title">
+                        Quem foi Stephen Hawking?
+                    </h1>
+                </div>
+
+                <br>
+
+                <div>
+                    <p class="sobre">
+                        O físico teórico Stephen Hawking, nascido exatamente 300
+                        anos depois de Galileu Galilei em 8 de Janeiro de 1942, 
+                        tornou-se um dos maiores cientistas de todos os tempos e
+                        foi o responsável por grande parte das maiores descobertas
+                        relacionadas à astrofísica moderna. 
+                    </p>
+                </div>
+    
+                <br>
+    
+                <div>
+                    <p class="sobre">
+                        Ele deixou uma enorme contribuição à ciência com sua 
+                        inteligência, tanto como diversos livros de divulgação
+                        científica, quanto em criar teses pautadas nas teorias 
+                        da gravidade, termodinâmica e mecânica quântica.
+                    </p>
+                </div>
+    
+                <br>
+
+                <div>
+                    <p class="sobre">
+                        Entre alguns livros, os mais conhecidos e recomendados à pesquisa são:
+                    </p>
+                    <br>
+                    <div>
+                        <a href="https://www3.unicentro.br/petfisica/2018/04/07/resenha-de-uma-breve-historia-do-tempo/" target="_blank" class="book">Uma Breve História do Tempo: do Big Bang aos Buracos Negros;</a>
+                        <br>
+                        <a href="https://www3.unicentro.br/petfisica/2015/07/08/resenha-de-o-universo-numa-casca-de-noz/" target="_blank" class="book">O Universo numa Casca de Noz;</a>
+                        <br>
+                        <a href="https://www.intrinseca.com.br/livro/333/#:~:text=Aos%2021%20anos%2C%20Hawking%20descobriu,mais%20afinco%20%C3%A0s%20descobertas%20intelectuais." target="_blank" class="book">Minha Breve História.</a>
+                    </div>
+
+            </nav>
+            
+        </section>
+
+        <br>
+        <br>
+
+        <section id="album">
+            <nav>
+
+                <div>
+                    <h2 id="foto">
+                        Imagens
+                    </h2>
+                </div>
+
+                <br>
+                <div id="galleri"> 
+                    <img src="imagens/ele1.png" alt="Stephen Hawking" class="fotos"> 
+                    <img src="imagens/centro.png" alt="Stephen Hawking" class="fotos">
+                    <img src="imagens/ele2.png" alt="Stephen Hawking" class="fotos">
+                    <img src="imagens/livro1.png" alt="Uma Breve História do Tempo: do Big Bang aos Buracos Negros" class="fotos">
+                    <img src="imagens/livro3.png" alt="Minha Breve História" class="fotos" >
+                    <img src="imagens/livro2.png" alt="O Universo numa Casca de Noz" class="fotos" >
+                    <img src="imagens/ele11.jpg" alt="Stephen Hawking" class="fotos">
+                    <img src="imagens/ele5.png" alt="Stephen Hawking" class="fotos">
+                    <img src="imagens/ele4.png  " alt="Stephen Hawking" class="fotos">
+                </div>
+            </nav>
+        </section>
+
+        <br>
+        <br>
+        
+        <section id="ldt">
+            <nav>
+                <div>
+                    <h1 id="title-tl">
+                        Linha do Tempo
+                    </h1>
+                </div>
+
+                <br>
+
+                <div id="linha"> <!-- uma linha do tempo simples, com um resumo da vida do personagem escolhido; -->
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            1942
+                        </strong>
+                        <br>
+                        Stephen Hawking nasce em 8 de Janeiro, em Oxford, na Inglaterra;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            1962
+                        </strong>
+                        <br>
+                        Graduou-se como Físico em Oxford, começou a pesquisar cosmologia 
+                        e teoria geral da relatividade em Cambridge;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            1963
+                        </strong>
+                        <br>
+                        Foi diagnosticado com a doença neurodegenerativa ELA;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            1965
+                        </strong>
+                        <br>
+                        Casou-se com Jane Wilde, o qual resultou em 3 filhos,
+                        e completa seu doutorado com a tese "Propriedades do
+                        Universo em expansão";
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            1968
+                        </strong>
+                        <br>
+                        Descobre que os buracos negros não são vácuos;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            1974
+                        </strong>
+                        <br>
+                        Com a piora de sua doença, fica de vez na cadeira
+                        de rodas;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years"> 
+                            1979
+                        </strong>
+                        <br>
+                        Assume o cargo de professor lucasiano de matemática
+                        em Cambridge;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            1985
+                        </strong>
+                        <br>
+                        Ele perde a capacidade de falar e começa a 
+                        utilizar uma máquina de verbalizar;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            1995
+                        </strong>
+                        <br>
+                        Casou-se novamente, agora com Elaine Mason;
+                        <br>
+                        Publica "O universo numa casca de noz";
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            2009
+                        </strong>
+                        <br>
+                        Ganha a Medalha presidencial da liberdade;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            2013
+                        </strong>
+                        <br>
+                        Publica "Minha breve história", um livro de suas memórias;
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            2015
+                        </strong>
+                        <br>
+                        Publica "Uma Breve História do Tempo";
+                    </p>
+
+                    <br>
+
+                    <p class="paragrafo-2">
+                        <strong class="years">
+                            2018
+                        </strong>
+                        <br>
+                        Morre em 14 de março de 2018, aos 76 anos.
+                    </p>
+
+                    <br>
+                    
+                </div>
+
+                <br>
+
+                <div id="final"> <!-- um link para uma outra página (externa), com informações adicionais sobre seu personagem escolhido. --> 
+                    <h3>
+                        Mais informações de Stephen Hawking no link a seguir:
+                        <a href="https://pt.wikipedia.org/wiki/Stephen_Hawking" target="_blank" class="book" >Clique aqui</a>
+                    </h3>
+                </div>
+                <br><br>
+            </nav>
+        </section>
+      
+    </main> 
+
+    <footer>
+        <div>
+            <h4 >
+                Desenvolvido por:
+                <a href="https://www.linkedin.com/in/gabrielschincariol/" target="_blank" id="linkedin"> Gabriel Hernandes Schincariol </a>
+                <p></p>Acesso em:</p>
+                <p id="data-atual"></p>
+                </h4>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- Olá pessoal! Hoje trago a vocês o meu segundo projeto envolvendo HTML e CSS, inovando com um pouco de JavaScript
+com uma mudança dinâmica de imagem.
+O intuito deste projeto é a criação de um website como forma de um "tributo" ou até mesmo uma homenagem a alguém que você
+admira/respeita. Utilizei recursos como descrições, imagens e até mesmo uma linha do tempo.
+Essa foi minha primeira experiência com linguagem de programação em si (JavaScript) e, para aprender, tive a grande 
+ajuda do instrutor Lucas Favareto no curso Begginers - Disponibilizado pela Faculdade Iv2. -->
