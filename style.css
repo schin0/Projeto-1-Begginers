@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lato&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-align: center;
+    outline: none;
+    
+}
+
+/* Começo do Título */
+
+#title {
+    font-family: 'Hanalei Fill', cursive;font-family: 'Orbitron', sans-serif; /* id title, dê uma nova fonte diferente do restante do corpo do artigo */
+    color:rgb(102, 51, 153);
+    text-shadow:0px 3px 5px rgba(128, 0, 128, 0.918);
+    font-size: 5em;
+    background-image: url(imagens/espaco.png); /* id title, um plano de fundo chamativo e que tenha tudo a ver com a personalidade escolhida */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0px 22px 0px;
+    box-shadow: inset 0px 2px 10px purple; 
+}
+
+/* Fim do Título */
+
+/* Começo do header */
+
+header {                                /* crie um menu superior (navbar) que deverá conter os seguintes itens:Imagens;Sobre;Linha do Tempo. */
+    background-image: url(imagens/spaceblue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0.2px;
+    height: 32px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0px 2px 5px purple;
+    padding-top: 5px;
+}
+
+.menu {
+    color: rgba(128, 0, 128, 0.808);
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-right: 32px;
+    position: relative;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color:#fccb43;
+}
+    
+.menu:hover::after {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+.menu:hover{
+    color:#fccb43;
+}
+    
+/* Fim do Header */
+
+/* Fundo */
+
+#main { /* Um seletor que utilize o id main com um plano de fundo destacado  */ 
+    background-image:
+    linear-gradient(rgba(183, 0, 255, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1565793676550-fbb4f51c5653?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=661&q=80)
+}
+
+#main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fim do Fundo */
+
+/* Imagem que muda */
+
+#img-div {
+    border: 0.1px solid black;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 65%;
+    padding: 15px;
+    background-color:  rgba(84, 0, 105, 0.384);
+    box-shadow: 10px 2px 15px 0 #fccb43;
+}
+
+main div figure img { /* Adicione uma borda arredondada a imagem do personagem escolhido */
+     
+    border-radius: 45%;
+}
+
+#legenda-imagem {
+    padding-top: 15px;
+    color:#fccb43;
+    font-size: 2em;
+    font-family: 'Audiowide', cursive;
+}
+
+/* Fim da imagem que muda */
+
+/* Sobre */
+
+#definicao {
+    margin: auto;
+    text-align: justify;
+    border: solid black;
+    width: 65%;
+    padding: 15px;
+    background-color:  #fccb43ea;
+    box-shadow: 10px 2px 15px 0 #532a7c
+    font-family: 'Audiowide', cursive;
+    font-family: 'Lato', sans-serif;
+}
+
+#definicao:hover {
+    width: 75%;
+    font-size: 1.4em;
+}
+
+.book {
+    margin: auto;
+    width: 100%;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    position: relative;
+    margin-right: 20px;
+}
+
+.book::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: black ;
+}
+
+.book:hover::after {
+    width: 100%;
+    transition: width 1s ease-in-out;
+}
+
+.book:hover{
+    color: #000000
+}
+
+/* FIm Sobre */
+
+/* Imagens */
+  
+#foto {
+    color:black;
+    border: 0.1px solid black;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 65%;
+    padding: 15px;
+    background-color:  rgba(84, 0, 105, 0.384);
+    box-shadow: 10px 2px 15px 0 #fccb43;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Lato', sans-serif;
+}
+
+#galleri {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    margin: auto;
+    background-color: #fccb43ea;
+    border:solid black;
+    box-shadow: 10px 2px 15px 0 #532a7c;
+}
+
+#galleri:hover {
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+    border: solid black;
+    padding: 15px;
+    background-color:  #fccb43ea;
+    box-shadow: 10px 2px 15px 0 #532a7c
+}
+
+.fotos {
+    width:25%;
+    height: 235px;
+    padding: 32px;
+    margin: 2px;
+    border-radius: 0px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  2px 3px 5px 5px  inset rgba(102, 51, 153, 0.336);
+}
+
+.fotos:hover {
+    display: block;
+    background-color: rebeccapurple;
+    box-shadow: 2px inset black;
+    height: 240px;
+}
+
+/* Fim Imagens */
+
+/* Timeline */
+
+#title-tl {
+    color:black;
+    border: 0.1px solid black;
+    margin: auto;
+    width: 65%;
+    padding: 15px;
+    background-color:  rgba(84, 0, 105, 0.384);
+    box-shadow: 10px 2px 15px 0 #fccb43;
+    font-size: 2em;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Lato', sans-serif;
+}
+
+#linha {
+    display: flex;
+    width: 35%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.years { /* Estilize a linha do tempo do personagem, dando ênfase aos anos */
+
+    font-family: 'Audiowide', cursive;
+    width: 20%;
+    color: black;
+    background-color:#fccb43;
+    padding: 0.1px;
+    margin: 0%;
+    border: 0.1px solid black;
+}
+
+.paragrafo-2 {
+    font-size: 1.2em;
+    border: 0.1px solid black;
+    background: linear-gradient(#fccb43 , #fccb436c);
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.years:hover {
+    font-size: 1.5em;
+    background: linear-gradient(#0000006c , #fccb43);
+    color:rgb(29, 0, 41);
+}
+
+#final{
+    margin: auto;
+    width: 50%;
+    border: solid 0.1px black;
+}
+
+footer {
+    background-color: rgba(31, 31, 31, 0.534);
+}
+
+#linkedin {
+    margin: auto;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    margin-right: 20px;
+}
+
+#linkedin:hover {
+    color: #fccb43;
+}
